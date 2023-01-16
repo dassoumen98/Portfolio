@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Soumen Das</title>
+    <link rel="shortcut icon" href="/image/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/2fe212be02.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="media-queary.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+<!-- navigation -->
+    <nav>
+        <div class="nav flex  container">
+            <h2 class="logo">S_ou_men || D∆s</h2>
+            <ul class="flex nav-list" id="nav-list">
+                <li ><a  href="#">Home</a></li>
+                <li><a  href="project.html">Projects</a></li>
+                <li><a href="/blogs.html">Blog</a></li>
+            </ul>
+            <a href="#" class="nav-toggle hover-link" id="nav-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </a>
+        </div>
+    </nav>
+
+<!-- hero section -->
+    <section>
+        <div class="container flex hero-section">
+            <img data-aos="fade-down" class="hero-img" src="/image/hero.svg" alt="">
+            <h1 data-aos="fade-up" class="hero-info">Soumen Das The <span>Web Developer</span> </h1>
+
+        </div>
+    </section>
+ <!-- technologis section -->
+    <section >
+        <div data-aos="fade-down" class="tech container flex">
+            <h2 class="tech-heading"><i class="fa-solid fa-gear" style="color:#2563eb;"></i> Technologies
+            </h2>
+            <p class="tech-info">I'm familiar with HTML5, CSS3, Git & GitHub, JavaScript,  and Web Hosting</p>
+        </div>
+            
+    </section>
+    <!-- ACADEMIC DETAILS: -->
+    <section>
+        <div data-aos="fade-down" class="academic container flex">
+            <h2 class="academic-heading"><i class="fa-solid fa-user-pen" style="color:#2563eb;"></i> Academic Details
+            </h2>
+         <div class="flex  academic-info">
+
+                <div class="icon ">
+                    <p><i class="fa-solid fa-school fa-2xl" style="color:#2563eb;"></i></p>
+                    <p>Secondary Exeamination(2018)</p>
+                    <p>67.14%</p>
+                </div>
+                <div class="icon">
+                    <p><i class="fa-solid fa-school fa-2xl" style="color:#2563eb;"></i></p>
+                    <p>High Exeamination(2020)</p>
+                    <p>83.2%</p>
+                </div>
+                <div class="icon">
+                    <p><i class="fa-solid fa-graduation-cap fa-2xl" style="color:#2563eb;"></i></p>
+                    <p>BCA(2023 Pursuing)</p>
+                    <p>81%</p>
+                </div>
+               
+
+          </div>
+          <a class="primary-button" href="/project.html">Resume <i class="fa-solid fa-download" style="color: rgb(228, 228, 249);"></i></a>
+          
+
+           
+    </div>
+            
+    </section>
+<!-- projects section -->
+    <section>
+        <div data-aos="fade-down" class="project container flex">
+            <h2 class="project-heading"><i class="fa-solid fa-sheet-plastic" style="color:#2563eb;"></i> Projects</h2>
+            <p class="project-info">I like to showcase my work and thus, you can see my projects hosted online</p>
+            <a class="primary-button" href="/project.html">See Projects</a>
+        </div>
+            
+    </section>
+<!-- Blogs section --> 
+    <section>
+        <div data-aos="fade-down" class="blog container flex">
+            <h2 class="blog-heading"><i class="fa-solid fa-blog" style="color:#2563eb;"></i> Blogs</h2>
+            <p class="blog-info">I am also working on some technical and non techincal blogs. I like to document my journey of learning.</p>
+            <a class="secondary-button" href="">Read Blogs</a>
+        </div>
+            
+    </section>
+<!-- footer section -->
+<section>
+    <div class="footer container flex">
+        <a class="back-to-top" href="#"><i class="fa-regular fa-circle-up fa-xl"></i></a>
+        <h2 class="footer-heading">Social Media Presence</h2>
+        <ul class="flex footer-list">
+            <li><a href="https://github.com/dassoumen98" target="_blank"><i class="fa-brands fa-github fa-2x"></i> GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/soumen-das-37b211211/" target="_blank"><i class="fa-brands fa-linkedin fa-2x"></i> LinkedIn</a></li>
+            <li><a href="https://www.instagram.com/dassoumen2021/?hl=en" target="_blank"><i class="fa-brands fa-instagram fa-2x"></i> Instagram</a></li>
+        </ul>
+    </div>
+</section>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+
+ <script>
+    AOS.init({
+        offset: 200,
+        duration: 800,
+    });
+  </script>
+
+  <!-- media querise -->
+  <script>
+    const toggleButton =document.getElementById('nav-toggle');
+    const navLinks = document.getElementById('nav-list')
+
+    toggleButton.addEventListener("click",()=>{
+        navLinks.classList.toggle("active");
+    })
+</script>
+
+</body>
+</html>
