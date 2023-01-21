@@ -1,0 +1,138 @@
+@media screen and (max-width: 991px) {
+    
+    p{
+        text-align: center;
+    }
+    .nav-toggle {
+        display: block;
+        margin-right: 20px;
+    }
+
+    .back-to-top {
+        display: none;
+
+    }
+    .nav{
+        overflow: initial;
+    }
+
+    .nav-list{
+        position: absolute;
+        flex-direction: column;
+        left: -100%;
+        top: calc(100% - 40px);
+        background-color:#fafafa;
+        width: 100%;
+        padding-block: 20px;
+        transition: 0.2s ease-in-out;
+        z-index: 1;        
+    }
+    .nav-list a {
+        color:black;
+    }
+
+    .nav-list.active{
+        left: 0;
+    }
+    .nav a:hover::after{
+        width: 100%;
+        background-color: black;
+    }
+
+
+
+
+}
+
+
+
+
+@media screen and (max-width: 569px){
+    
+   
+    .hero-section span{
+        font-size: 1.6rem;
+    }
+
+    .hero-section .hero-info {
+        font-size: 1.6rem;
+    }
+    .icon{
+        gap: 13px;
+    }
+
+
+
+/* project examples */
+
+
+.project-exe .project-button{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+.blog-para{
+    overflow: hidden;
+}
+
+
+
+}
+@media screen and (max-width: 479px){
+     
+    
+    
+    p{
+        font-size: 1rem;
+    }
+    h2{
+        font-size: 1.2rem;
+    }
+    .hero-section span{
+        font-size: 1.2rem;
+    }
+
+    .hero-section .hero-info {
+        font-size: 1.2rem;
+    }
+
+    /* academic */
+    .academic-info{
+        gap: 25px;
+        text-align: center;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+    
+    
+        
+    .icon{
+        gap: 10px;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    /* footer */
+    .footer-list i{
+        font-size: 1.1rem;
+    }
+    .footer-list{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 359px){
+    .hero-section h1{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
+
+
+
+
+
+
