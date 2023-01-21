@@ -9,7 +9,7 @@
     <link rel="shortcut icon" href="/image/favicon.ico" type="image/x-icon">
     <script src="https://kit.fontawesome.com/2fe212be02.js" crossorigin="anonymous"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="media-queary.css"> -->
+    <link rel="stylesheet" href="media.css">
 
 
 </head>
@@ -18,21 +18,27 @@
     <nav>
         <div class="nav flex  container">
             <h2 class="logo">Soumen Das</h2>
-            <ul class="flex nav-list">
-                <li><a href="/index.html">Home</a></li>
-                <li><a href="project.html">Projects</a></li>
+        
+            <ul class="flex nav-list" id="nav-list">
+                <li ><a  href="/index.html">Home</a></li>
+                <li><a  href="project.html">Projects</a></li>
                 <li><a href="/blogs.html">Blog</a></li>
             </ul>
+            <a href="#" class="nav-toggle" id="nav-toggle"><i class="fa-solid fa-bars"></i></a>
         </div>
     </nav>
 <!-- project logo section -->
     <section>
         <div class="container flex hero-section project-img">
+        
             <img  data-aos="fade-right" class="hero-img" src="/image/project.svg" alt="">
             <h1  data-aos="fade-left"class="hero-info"><span>Projects</span> Section </h1>
-
+        
         </div>
+    
     </section>
+        
+
 
     <!-- example section -->
     <section class="project-reverse">
@@ -94,5 +100,15 @@
         }
      );
 </script>
+  <!-- media querise -->
+  <script>
+    const toggleButton =document.getElementById('nav-toggle');
+    const navLinks = document.getElementById('nav-list')
+
+    toggleButton.addEventListener("click",()=>{
+        navLinks.classList.toggle("active");
+    })
+</script>
+
 </body>
 </html>
